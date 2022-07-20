@@ -12,7 +12,10 @@ const createCategory = {
 const getCategories = {
     query: Joi.object().keys({
         name: Joi.string(),
-        status: Joi.number().valid(...Object.values(statusTypes))
+        status: Joi.number().valid(...Object.values(statusTypes)),
+        sortBy: Joi.string(),
+        limit: Joi.number().integer(),
+        page: Joi.number().integer(),
     }),
 };
 
