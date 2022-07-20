@@ -46,6 +46,17 @@ components:
           type: number
         message:
           type: string
+    Category:
+      type: object
+      properties:
+        name:
+          type: string
+        status:
+          type: number
+          enum: [0, 1]
+      example:
+        name: fake category
+        status: 1
 
   responses:
     DuplicateEmail:
