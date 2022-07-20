@@ -218,7 +218,7 @@ module.exports = router;
  *           type: string
  *         description: Category id
  *     responses:
- *       "200":
+ *       "204":
  *         description: No content
  *       "401":
  *         $ref: '#/components/responses/Unauthorized'
